@@ -5,7 +5,7 @@ import Hero from "@/components/home/Hero";
 import Server from "@/components/home/Server";
 import Stats from "@/components/home/Stats";
 import Testimonials from "@/components/home/Testimonials";
-import Image from "next/image";
+
 
 export default function Home() {
   return (
