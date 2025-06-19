@@ -1,4 +1,10 @@
-import { BackgroundBeams } from "@/components/home/Background";
+import dynamic from "next/dynamic";
+
+const BackgroundBeams = dynamic(
+  () => import("@/components/home/Background").then(mod => mod.BackgroundBeams),
+  { ssr: false }
+);
+
 import Features from "@/components/home/Features";
 import Footer from "@/components/home/Footer";
 import Hero from "@/components/home/Hero";
